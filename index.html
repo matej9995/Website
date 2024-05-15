@@ -14,56 +14,96 @@
 
   <body>
 
-    <p class="Majesky">
-      Majesky
-    </p>
+    <div class="hero">
 
-    <p class="titel">
-      Herzlich willkommen bei majesky.de!
-    </p>
-    
-    
-    <div class="myDiv">
-      <a href="https://www.youtube.com/watch?v=rgg1WUJhUc4" 
-    target="_blank">
-    <button class="kebapbutton">
-      Kaufen Sie hier Ihren Döner
-    </button>
-  </a>
-  </div>
-    
- 
-    <p class="textfeld">
-      Diese Website enthält Informationen und Anekdoten zu Memo und Yakub Yaprak.
-      Desweiteren wird hier über die Existenz von Harold aus Arkansas philosophiert.
-      Wie sieht wohl sein Arbeitsalltag im Sägewerk aus?
-    </p>
- 
-    
+   
+  
+      <div class="Spinning">
+    <img class="flip-vertical-right" src="Letter_M.svg">
+      </div>
+  
+     
 
-   <div class="secdiv">
-    <a href="https://www.youtube.com/watch?v=tXkPl5XSq54&list=PL9gUlArTA-ZwB-jaC0WPC32wBp3s5mCnj&index=9" 
-    target="_blank">
-    <button class="videobutton">
-      Since 30 years
-    </button>
+      <div class="container">
+        <div class="clock">
+          <span id="hrs">00</span>
+          <span>:</span>
+          <span id="min">00</span>
+          <span>:</span>
+          <span id="sec">00</span>
+        </div>
+      </div>
+
+      <p class="titel">
+        Herzlich willkommen bei majesky.de!
+      </p>
+      
+      
+      <div class="myDiv">
+        <a href="https://www.youtube.com/watch?v=rgg1WUJhUc4" 
+      target="_blank">
+      <button class="kebapbutton">
+        Harlem Shake
+      </button>
     </a>
-  </div>
+    </div>
+      
+   
+      <p class="textfeld">
+        Diese Website enthält Informationen und Anekdoten zu Memo und Yakub Yaprak.
+        Desweiteren wird hier über die Existenz von Harold aus Arkansas philosophiert.
+        Wie sieht wohl sein Arbeitsalltag im Sägewerk aus?
+      </p>
+   
+      
+  
+     <div class="secdiv">
+      <a href="https://www.youtube.com/watch?v=tXkPl5XSq54&list=PL9gUlArTA-ZwB-jaC0WPC32wBp3s5mCnj&index=9" 
+      target="_blank">
+      <button class="videobutton">
+        Chillout since 30 years
+      </button>
+      </a>
+    </div>
+  
+  
+    
+  
+    <div class="picture">
+  <img class="slide-in-bottom" src="mit Termi.png">
+    </div>
 
-<div class="searchboro">
-  <input class="searchbar" type="text" placeholder="Finde Liselotte's Ex">
-</div>
+
+    </div>
+
+   
+
+
+
   
 
-  <div class="picture">
-<img class="slide-in-bottom" src="mit Termi.png">
-  </div>
+    <script>
+    let hrs = document.getElementById("hrs");
+    let min = document.getElementById("min");
+    let sec = document.getElementById("sec");
 
-
-
-  
+    setInterval(()=>{
 
     
+    let currentTime = new Date();
+
+      hrs.innerHTML = (currentTime.getHours()<10?"0":"")+currentTime.getHours();
+      min.innerHTML = (currentTime.getMinutes()<10?"0":"")+currentTime.getMinutes();
+      sec.innerHTML = (currentTime.getSeconds()<10?"0":"")+currentTime.getSeconds();
+        
+    }, 10)
+
+
+
+
+
+
+  </script>
   </body>
 </html>
 
